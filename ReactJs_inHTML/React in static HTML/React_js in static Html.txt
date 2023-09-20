@@ -1,0 +1,40 @@
+
+inside head tag --> style sheet and script can be written.
+
+CND'S --> .js file in different network can be used by link 
+
+1-> babel (.js in react is ES6 version which is not supported by old browser, to support this version in all browser babel.js is used)
+2-> react ( which is react lib)
+3-> react-dom (language written in react + dom in browser will combine and make changes in HTML ,  for this react-dom lib is used)
+
+inside body tag
+
+there is a div called root where the react perform all its work.
+
+below the div tag , script tag--> which contain react programming 
+
+"text/babel" --> to indicate babel that react programming is present here
+
+to create component in react
+
+--> to create component , js class is used which extends React.Component
+
+render() -->it returns the element 
+
+here <h1>Happy coding </h1> is jsx, it is not html,text.
+
+to call class 
+
+--> we use ReactDOM.render(<App/>, Document.getById('root')
+
+here ReactDOM  is a object 
+      render is a method which contain two argument 
+            i) is the name of the component 
+            ii) is the location where it should be returned after completeing the process of the component 
+
+the script works and returns the h1 tag (by inspecting page)
+
+can't develop complete single page app by using lib , it req large number of file which structured under a single folder.
+
+
+

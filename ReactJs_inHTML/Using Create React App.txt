@@ -1,0 +1,107 @@
+it is introduced by fb
+
+to create react app using 'create-react-app'.
+
+node:
+ --> it is not a programming lan
+-->it is runtime environment
+
+it run program and gives output outside the browser.
+
+there is a software called npm inside node js.
+
+
+need of node js here:
+
+to create development server which is done by create react app using webpack , for this node js is needed.
+
+to create react project in cmd->
+
+npx create-react-app myreactapp
+
+to close terminal ctrl + `
+
+react app contain
+
+-->src
+-->public
+(contain index.html , which is similar to the react app created using static html, the difference is, there is no script tags in head)
+
+here react will not bring script related things in this file.
+to achieve this there is a folder called src which contain app.js file (there is a function called app which perform work and exported to ) -->index.js (which render root in index.html )
+
+-->node_modules(contain all node packages)
+
+index.js contains
+
+since already told that , div called root where react perform all its work.
+
+to achieve this , the root is used here by getElementById method and stored in const =root 
+
+and this root render the component called app which is exported in app.js (it contain function called app , it perform its work and exported to index.js ) and the output is deliverd using the div called root.
+
+remove unwanted files --> except index.js , index.css
+
+index.css -->it already contain some css , if your project req some specific css ,it can be used here.
+
+index.js
+
+create a function component called App . 
+
+In React, whether you're defining a function component or a class component, you use return in a function component and render in a class component to specify what the component should render to the DOM.
+
+eg :
+
+In a function component, you define the component as a JavaScript function and use the return statement to return the JSX elements you want to render. 
+
+function FunctionComponent() {
+  return (
+    <div>
+      <p>This is a function component.</p>
+    </div>
+  );
+}
+
+
+eg:
+
+In a class component, you define the component as a JavaScript class that extends React.Component, and you override the render method to specify what the component should render.
+
+class ClassComponent extends React.Component {
+  render() {
+    return (
+      <div>
+        <p>This is a class component.</p>
+      </div>
+    );
+  }
+}
+
+to take a class from module-->
+
+eg: import React,{Component} from 'react' ---> here Component is a class and React is a Module.
+
+
+if we use class compoenent it must extends a Component class , if there is Component class the should be a method called render().
+
+inside render() --> it contains jsx syntax element ( to create html out put)
+
+in my code i have functional component called App , then it should be render inside the <React.StrictMode> component.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
